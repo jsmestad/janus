@@ -32,15 +32,7 @@ servers, install console vim with `apt-get install vim-nox`.
 
 ## Installation
 
-0. `for i in ~/.vim ~/.vimrc ~/.gvimrc; do [ -e $i ] && mv $i $i.old;
-   done`
-1. `git clone git://github.com/carlhuda/janus.git ~/.vim`
-2. `cd ~/.vim`
-3. `rake`
-
-or
-
-  `curl https://github.com/carlhuda/janus/raw/master/bootstrap.sh -o - | sh`
+  `curl https://github.com/jsmestad/janus/raw/master/bootstrap.sh -o - | sh`
 
 ## Customization
 
