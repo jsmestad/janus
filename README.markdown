@@ -1,3 +1,8 @@
+# Modifications
+
+* Revert to using scrooloose's NERDTree, instead of the UTF-8 modified wycat's one.
+* Add support for bufexplorer
+
 # Janus: Carlhuda's vim Distribution
 
 This is a basic distribution of vim plugins and tools intended to be run
