@@ -237,7 +237,7 @@ end
 
 desc "Pull the latest"
 task :pull do
-  system "git pull origin master"
+  system "git pull"
 end
 
 task :default => [
