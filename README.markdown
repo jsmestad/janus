@@ -2,6 +2,7 @@
 
 * Revert to using scrooloose's NERDTree, instead of the UTF-8 modified wycat's one.
 * Add support for bufexplorer
+* Add support for minibufexpl
 
 # Janus: Carlhuda's vim Distribution
 
