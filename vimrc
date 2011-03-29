@@ -47,10 +47,10 @@ map <Leader><Leader> :ZoomWin<CR>
 map <Leader>rt :!ctags --extra=+f -R *<CR><CR>
 
 " Remember last location in file
-if has("autocmd")
-  au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$")
-    \| exe "normal g'\"" | endif
-endif
+" if has("autocmd")
+"  au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$")
+"    \| exe "normal g'\"" | endif
+" endif
 
 function s:setupWrapping()
   set wrap
@@ -135,6 +135,10 @@ let macvim_hig_shift_movement = 1
 
 " % to bounce from do to end etc.
 runtime! macros/matchit.vim
+
+"map to bufexplorer
+nnoremap <C-B> :BufExplorer<cr>
+let g:bufExplorerShowRelativePath=1
 
 " Include user's local vim config
 if filereadable(expand("~/.vimrc.local"))
