@@ -157,19 +157,19 @@ vim_plugin_task "scala",            "git://github.com/bdd/vim-scala.git"
 vim_plugin_task "gist-vim",         "git://github.com/mattn/gist-vim.git"
 # vim_plugin_task "minibufexpl",      "git://github.com/fholgado/minibufexpl.vim.git"
 
-vim_plugin_task "command_t",        "git://github.com/wincent/Command-T.git" do
-  sh "find ruby -name '.gitignore' | xargs rm"
-  Dir.chdir "ruby/command-t" do
-    if File.exists?("/usr/bin/ruby1.8") # prefer 1.8 on *.deb systems
-      sh "/usr/bin/ruby1.8 extconf.rb"
-    elsif File.exists?("/usr/bin/ruby") # prefer system rubies
-      sh "/usr/bin/ruby extconf.rb"
-    elsif `rvm > /dev/null 2>&1` && $?.exitstatus == 0
-      sh "rvm system ruby extconf.rb"
-    end
-    sh "make clean && make"
-  end
-end
+# vim_plugin_task "command_t",        "git://github.com/wincent/Command-T.git" do
+#   sh "find ruby -name '.gitignore' | xargs rm"
+#   Dir.chdir "ruby/command-t" do
+#     if File.exists?("/usr/bin/ruby1.8") # prefer 1.8 on *.deb systems
+#       sh "/usr/bin/ruby1.8 extconf.rb"
+#     elsif File.exists?("/usr/bin/ruby") # prefer system rubies
+#       sh "/usr/bin/ruby extconf.rb"
+#     elsif `rvm > /dev/null 2>&1` && $?.exitstatus == 0
+#       sh "rvm system ruby extconf.rb"
+#     end
+#     sh "make clean && make"
+#   end
+# end
 
 vim_plugin_task "janus_themes" do
   # custom version of railscasts theme
